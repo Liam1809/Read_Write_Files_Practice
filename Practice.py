@@ -29,3 +29,11 @@ with open("just_the_first.txt") as first_line_doc:
 # Will create a new file with the given name, if there is a file exist ==> overwrite content 
 with open("bad_bands.txt", "w") as bad_bands_doc:
    bad_bands = bad_bands_doc.write("HKT Band")
+   
+# Appending to a File
+with open("cool_dogs.txt", 'a') as cool_dogs_file:
+  cool_dogs_file.write("Air Buddy")
+  cool_dogs_file.write("Air Buddy")
+with open("cool_dogs.txt") as cool_dogs_file:
+  r = cool_dogs_file.read()
+  print(r)
