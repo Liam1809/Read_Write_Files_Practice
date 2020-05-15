@@ -37,3 +37,7 @@ with open("cool_dogs.txt", 'a') as cool_dogs_file:
 with open("cool_dogs.txt") as cool_dogs_file:
   r = cool_dogs_file.read()
   print(r)
+  
+# Reading a CSV
+with open("logger.csv") as log_csv_file:
+  print(log_csv_file.read())
