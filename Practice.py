@@ -24,3 +24,8 @@ with open("just_the_first.txt") as first_line_doc:
   first_line1 = first_line_doc.readline()
   print(first_line)
   print(first_line1)
+  
+# Writing a File 
+# Will create a new file with the given name, if there is a file exist ==> overwrite content 
+with open("bad_bands.txt", "w") as bad_bands_doc:
+   bad_bands = bad_bands_doc.write("HKT Band")
