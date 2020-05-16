@@ -24,3 +24,12 @@ with open("logger.csv", 'w') as logger_csv:
   log_writer.writeheader()
   for item in access_log:
     log_writer.writerow(item)
+
+
+
+# Reading a JSON File
+import json
+with open("message.json") as message_json:
+  message = json.load(message_json)
+  print(message)
+  print(message['text'])
